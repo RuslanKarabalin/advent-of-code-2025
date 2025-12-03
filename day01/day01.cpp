@@ -16,11 +16,10 @@ int main() {
         std::string number = line.substr(1, line.length());
         if (turn == "R") {
             start += std::stoi(number);
-            start %= 100;
         } else {
             start -= std::stoi(number);
-            start %= 100;
         }
+        start %= 100;
         if (start < 0) {
             start += 100;
         }
@@ -30,6 +29,5 @@ int main() {
     }
 
     std::cout << password << std::endl;
-
     return 0;
 }

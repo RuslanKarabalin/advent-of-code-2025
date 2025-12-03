@@ -10,7 +10,7 @@ int main() {
 
     unsigned long long sum = 0;
     std::string line;
-    while(std::getline(std::cin, line, ',')) {
+    while (std::getline(std::cin, line, ',')) {
         std::string::size_type d = line.find('-');
         unsigned long long start = std::stoll(line.substr(0, d));
         unsigned long long end = std::stoll(line.substr(d + 1, line.length()));

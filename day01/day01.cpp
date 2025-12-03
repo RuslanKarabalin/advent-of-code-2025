@@ -13,7 +13,7 @@ int main() {
     std::string line;
     while (std::getline(std::cin, line)) {
         std::string turn = line.substr(0, 1);
-        std::string number = line.substr(1, line.length());
+        std::string number = line.substr(1);
         if (turn == "R") {
             start += std::stoi(number);
         } else {

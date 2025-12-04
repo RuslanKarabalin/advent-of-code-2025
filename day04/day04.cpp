@@ -53,7 +53,7 @@ int main() {
                         ur = vector[i - 1][j + 1];
                         uc = vector[i - 1][j];
                     } else if (j == v.size() - 1) {
-                        r = dr = '.';
+                        r = ur = '.';
                         l = vector[i][j - 1];
                         ul = vector[i - 1][j - 1];
                         uc = vector[i - 1][j];

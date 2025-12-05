@@ -28,6 +28,6 @@ int main() {
         }
         sum += (firstMax * 10) + secondMax;
     }
-    std::cout << sum << std::endl;
+    std::cout << "Result: " << sum << std::endl;
     return 0;
 }

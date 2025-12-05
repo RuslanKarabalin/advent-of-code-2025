@@ -26,6 +26,6 @@ int main() {
         }
     }
 
-    std::cout << password << std::endl;
+    std::cout << "Result: " << password << std::endl;
     return 0;
 }

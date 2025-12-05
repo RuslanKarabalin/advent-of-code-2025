@@ -37,6 +37,6 @@ int main() {
         start = ((start % 100) + 100) % 100;
     }
 
-    std::cout << password << '\n';
+    std::cout << "Result: " << password << '\n';
     return 0;
 }

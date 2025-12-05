@@ -6,12 +6,12 @@ int main() {
     std::cout.tie(nullptr);
     std::cin.tie(nullptr);
 
-    unsigned long long sum = 0;
+    long long sum = 0;
     std::string line;
     while (std::getline(std::cin, line, ',')) {
         std::string::size_type d = line.find('-');
-        unsigned long long start = std::stoll(line.substr(0, d));
-        unsigned long long end = std::stoll(line.substr(d + 1));
+        long long start = std::stoll(line.substr(0, d));
+        long long end = std::stoll(line.substr(d + 1));
         for (long long i = start; i <= end; ++i) {
             std::string num = std::to_string(i);
             if (num.length() % 2 == 0) {

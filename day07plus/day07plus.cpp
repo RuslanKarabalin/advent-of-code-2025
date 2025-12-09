@@ -14,14 +14,15 @@ int main() {
 
     int rows = grid.size();
     int cols = grid[0].size();
-    std::vector<std::vector<long long>> dp(rows, std::vector<long long>(cols, 0));
+    std::vector<std::vector<long long>> dp(rows,
+                                           std::vector<long long>(cols, 0));
     for (int j = 0; j < cols; ++j) {
         if (grid[0][j] == 'S') {
             dp[0][j] = 1;
             break;
         }
     }
-    
+
     for (int i = 0; i < rows; ++i) {
         for (int j = 0; j < cols; ++j) {
             if (dp[i][j] == 0) {
@@ -47,11 +48,10 @@ int main() {
         }
     }
 
-
     for (int i = 0; i < rows; ++i) {
         for (int j = 0; j < cols; ++j) {
             long long p = dp[i][j];
-            if (p == 0) { 
+            if (p == 0) {
                 printf("   ");
             } else {
                 printf(" %2lld", p);
